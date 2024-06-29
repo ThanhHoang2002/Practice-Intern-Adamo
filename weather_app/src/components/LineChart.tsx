@@ -13,6 +13,8 @@ import {
   Legend,
   Filler,
 } from "chart.js";
+import { TemperatureInDay } from "../types/types";
+import { formatHour, formatTemperature } from "../utils/format";
 
 ChartJS.register(
   CategoryScale,
@@ -26,30 +28,21 @@ ChartJS.register(
   Filler,
 
 );
-
-const LineChart = () => {
+interface LineChartProps {
+  temperatureInDay: TemperatureInDay[];
+}
+const LineChart = (props: LineChartProps) => {
+  const { temperatureInDay } = props;  
 const data = {
-    labels: [
-        "11:00",
-        "14:00",
-        "17:00",
-        "20:00",
-        "23:00",
-        "02:00",
-        "05:00",
-        "08:00",
-        
-    ],
+    labels: temperatureInDay?.map((item) => formatHour(item.hour)),
     datasets: [
         {
             label: "Temperature",
-            data: [22, 27, 31, 31, 29, 28, 28, 27, 28,26,28,29,30,40,20],
+            data: temperatureInDay?.map((item) => formatTemperature(item.temperature)).concat([20,45]),
             borderColor: "rgba(255, 193, 7, 1)",
             backgroundColor: "rgba(255, 193, 7, 0.2)", 
             fill: true,
             tension: 0.1,
-            
-
         },
     ],
 };
@@ -58,7 +51,11 @@ const data = {
     responsive: true,
     plugins: {
       legend: {
-        display: false, // Ẩn legend
+        display: false, 
+      },
+      datalabels: {
+        align: 'top' as const,
+        offset: 2,
       },
     },
     scales: {
