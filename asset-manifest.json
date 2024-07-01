@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Practice-Intern-Adamo/static/css/main.2db41686.css",
+    "main.js": "/Practice-Intern-Adamo/static/js/main.967d03f2.js",
+    "static/js/453.a50becb7.chunk.js": "/Practice-Intern-Adamo/static/js/453.a50becb7.chunk.js",
+    "index.html": "/Practice-Intern-Adamo/index.html",
+    "main.2db41686.css.map": "/Practice-Intern-Adamo/static/css/main.2db41686.css.map",
+    "main.967d03f2.js.map": "/Practice-Intern-Adamo/static/js/main.967d03f2.js.map",
+    "453.a50becb7.chunk.js.map": "/Practice-Intern-Adamo/static/js/453.a50becb7.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2db41686.css",
+    "static/js/main.967d03f2.js"
+  ]
+}
