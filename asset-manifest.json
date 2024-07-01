@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/Practice-Intern-Adamo/weather_app/static/css/main.5d0afa9f.css",
+    "main.js": "/Practice-Intern-Adamo/weather_app/static/js/main.8adc85e6.js",
+    "static/js/453.0ccb7fb4.chunk.js": "/Practice-Intern-Adamo/weather_app/static/js/453.0ccb7fb4.chunk.js",
+    "static/media/Rain.png": "/Practice-Intern-Adamo/weather_app/static/media/Rain.92d2bf077f3cae9a866c.png",
+    "static/media/Clouds.jpg": "/Practice-Intern-Adamo/weather_app/static/media/Clouds.00ae4dc2b2c5461bcafd.jpg",
+    "static/media/sun.jpg": "/Practice-Intern-Adamo/weather_app/static/media/sun.b734653d5d909370def9.jpg",
+    "index.html": "/Practice-Intern-Adamo/weather_app/index.html",
+    "main.5d0afa9f.css.map": "/Practice-Intern-Adamo/weather_app/static/css/main.5d0afa9f.css.map",
+    "main.8adc85e6.js.map": "/Practice-Intern-Adamo/weather_app/static/js/main.8adc85e6.js.map",
+    "453.0ccb7fb4.chunk.js.map": "/Practice-Intern-Adamo/weather_app/static/js/453.0ccb7fb4.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5d0afa9f.css",
+    "static/js/main.8adc85e6.js"
+  ]
+}
