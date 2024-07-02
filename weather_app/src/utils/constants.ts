@@ -1,6 +1,6 @@
-export const GOONG_API_KEY = "TPtlQJJsrOvbIegiMhkf9ChSvNUXpQFjPWbE3BZM";
+const GOONG_API_KEY = process.env.REACT_APP_GOONG_API_KEY;
 
-export const WEATHER_API_KEY = "64a6c10de01e2b6badb8b5ad72fc5fa7";
+const WEATHER_API_KEY = process.env.REACT_APP_WEATHER_API_KEY;
 
 export const initialAddress = {
     name: "Công ty cổ phần LILAMA 10, Phố Tố Hữu, Trung Văn, Nam Từ Liêm, Hà Nội",
