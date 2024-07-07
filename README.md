@@ -1,1 +1,0 @@
-# Practice-Intern-Adamo
