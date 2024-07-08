@@ -9,7 +9,7 @@ import { getImageByPath } from '../utils/format'
 const FilterProductByCategory = () => {
   const dispath = useAppDispatch()
   const location = useLocation()
-  const image = getImageByPath(location.pathname)
+  const image = getImageByPath(location.pathname) as string
   useEffect(() => {
     const category = location.pathname
     dispath(fetchProductByCategory(category))
@@ -17,7 +17,9 @@ const FilterProductByCategory = () => {
   return (
     <div className='flex flex-col items-center'>
       <img src={image} alt='category' />
-      <h1 className='text-2xl pl-5 pt-5 self-start font-bold capitalize'>{location.pathname.slice(1).replace('%20', ' ')}</h1>
+      <h1 className='text-2xl pl-5 pt-5 self-start font-bold capitalize'>
+        {location.pathname.slice(1).replace('%20', ' ')}
+      </h1>
       <ProductList />
     </div>
   )
